@@ -1,0 +1,66 @@
+@import './vars.scss';
+
+/** Это пример */
+
+table {
+  width: 100%;
+  max-width: 900px;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  table-layout: fixed;
+  overflow-x: scroll;
+}
+
+table thead {
+  background-color: $main-color;
+  color: white;
+}
+
+table th,
+table td {
+  padding: 12px 8px;
+  text-align: left;
+  font-size: 14px;
+  border: 2px solid #DEE4E8;
+}
+
+
+table tbody tr:hover {
+  background-color: #e9eff7;
+}
+
+tbody tr.active {
+  background-color: #d0e0ff;
+}
+
+table th {
+  background-color: $main-color;
+  letter-spacing: 1px;
+}
+
+.fixed-column {
+  position: sticky;
+  left: 0;
+  z-index: 1; 
+}
+
+table td {
+  color: #555;
+}
+
+table tbody tr td:first-child {
+  font-weight: bold;
+  color: #333;
+}
+
+table tbody tr td:last-child {
+  color: $main-color;
+  font-weight: bold;
+}
+
+.row-checkbox {
+  display: none;
+}
